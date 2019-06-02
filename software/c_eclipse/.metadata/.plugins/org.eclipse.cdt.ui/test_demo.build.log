@@ -1,0 +1,38 @@
+14:37:24 **** Incremental Build of configuration Nios II for project test_demo ****
+make all 
+Info: Building ../test_demo_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../test_demo_bsp/
+[BSP build complete]
+Info: Compiling hello_world_small.c to obj/default/hello_world_small.o
+nios2-elf-gcc -xc -MP -MMD -c -I../test_demo_bsp//HAL/inc -I../test_demo_bsp/ -I../test_demo_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world_small.o hello_world_small.c
+In file included from ../test_demo_bsp//drivers/inc/altera_avalon_pio_regs.h:34:0,
+                 from hello_world_small.c:3:
+hello_world_small.c: In function 'main':
+hello_world_small.c:6:30: error: 'ENABLE_BASE' undeclared (first use in this function)
+  IOWR_ALTERA_AVALON_PIO_DATA(ENABLE_BASE, 1);
+                              ^
+../test_demo_bsp//HAL/inc/io.h:70:23: note: in definition of macro '__IO_CALC_ADDRESS_NATIVE'
+   ((void *)(((alt_u8*)BASE) + ((REGNUM) * (SYSTEM_BUS_WIDTH/8))))
+                       ^
+../test_demo_bsp//drivers/inc/altera_avalon_pio_regs.h:38:55: note: in expansion of macro 'IOWR'
+ #define IOWR_ALTERA_AVALON_PIO_DATA(base, data)       IOWR(base, 0, data)
+                                                       ^
+hello_world_small.c:6:2: note: in expansion of macro 'IOWR_ALTERA_AVALON_PIO_DATA'
+  IOWR_ALTERA_AVALON_PIO_DATA(ENABLE_BASE, 1);
+  ^
+hello_world_small.c:6:30: note: each undeclared identifier is reported only once for each function it appears in
+  IOWR_ALTERA_AVALON_PIO_DATA(ENABLE_BASE, 1);
+                              ^
+../test_demo_bsp//HAL/inc/io.h:70:23: note: in definition of macro '__IO_CALC_ADDRESS_NATIVE'
+   ((void *)(((alt_u8*)BASE) + ((REGNUM) * (SYSTEM_BUS_WIDTH/8))))
+                       ^
+../test_demo_bsp//drivers/inc/altera_avalon_pio_regs.h:38:55: note: in expansion of macro 'IOWR'
+ #define IOWR_ALTERA_AVALON_PIO_DATA(base, data)       IOWR(base, 0, data)
+                                                       ^
+hello_world_small.c:6:2: note: in expansion of macro 'IOWR_ALTERA_AVALON_PIO_DATA'
+  IOWR_ALTERA_AVALON_PIO_DATA(ENABLE_BASE, 1);
+  ^
+make: *** [obj/default/hello_world_small.o] Error 1
+
+14:37:26 Build Finished (took 1s.773ms)
+

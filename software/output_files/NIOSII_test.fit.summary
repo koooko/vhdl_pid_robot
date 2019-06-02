@@ -1,0 +1,18 @@
+Fitter Status : Successful - Sun Jun 02 14:17:43 2019
+Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+Revision Name : NIOSII_test
+Top-level Entity Name : processor
+Family : MAX 10
+Device : 10M08DAF256C8GES
+Timing Models : Preliminary
+Total logic elements : 1,640 / 8,064 ( 20 % )
+    Total combinational functions : 1,529 / 8,064 ( 19 % )
+    Dedicated logic registers : 893 / 8,064 ( 11 % )
+Total registers : 893
+Total pins : 9 / 178 ( 5 % )
+Total virtual pins : 0
+Total memory bits : 44,032 / 387,072 ( 11 % )
+Embedded Multiplier 9-bit elements : 0 / 48 ( 0 % )
+Total PLLs : 0 / 2 ( 0 % )
+UFM blocks : 0 / 1 ( 0 % )
+ADC blocks : 0 / 1 ( 0 % )

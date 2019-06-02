@@ -1,0 +1,127 @@
+Flow report for NIOSII_test
+Sun Jun 02 14:17:55 2019
+Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Flow Summary
+  3. Flow Settings
+  4. Flow Non-Default Global Settings
+  5. Flow Elapsed Time
+  6. Flow OS Summary
+  7. Flow Log
+  8. Flow Messages
+  9. Flow Suppressed Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2018  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
+
+
+
++----------------------------------------------------------------------------------+
+; Flow Summary                                                                     ;
++------------------------------------+---------------------------------------------+
+; Flow Status                        ; Successful - Sun Jun 02 14:17:48 2019       ;
+; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
+; Revision Name                      ; NIOSII_test                                 ;
+; Top-level Entity Name              ; processor                                   ;
+; Family                             ; MAX 10                                      ;
+; Device                             ; 10M08DAF256C8GES                            ;
+; Timing Models                      ; Preliminary                                 ;
+; Total logic elements               ; 1,640 / 8,064 ( 20 % )                      ;
+;     Total combinational functions  ; 1,529 / 8,064 ( 19 % )                      ;
+;     Dedicated logic registers      ; 893 / 8,064 ( 11 % )                        ;
+; Total registers                    ; 893                                         ;
+; Total pins                         ; 9 / 178 ( 5 % )                             ;
+; Total virtual pins                 ; 0                                           ;
+; Total memory bits                  ; 44,032 / 387,072 ( 11 % )                   ;
+; Embedded Multiplier 9-bit elements ; 0 / 48 ( 0 % )                              ;
+; Total PLLs                         ; 0 / 2 ( 0 % )                               ;
+; UFM blocks                         ; 0 / 1 ( 0 % )                               ;
+; ADC blocks                         ; 0 / 1 ( 0 % )                               ;
++------------------------------------+---------------------------------------------+
+
+
++-----------------------------------------+
+; Flow Settings                           ;
++-------------------+---------------------+
+; Option            ; Setting             ;
++-------------------+---------------------+
+; Start date & time ; 06/02/2019 14:15:33 ;
+; Main task         ; Compilation         ;
+; Revision Name     ; NIOSII_test         ;
++-------------------+---------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                        ;
++-------------------------------------+----------------------------------------+---------------+-------------+------------+
+; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id ;
++-------------------------------------+----------------------------------------+---------------+-------------+------------+
+; COMPILER_SIGNATURE_ID               ; 251485268597205.155947773221168        ; --            ; --          ; --         ;
+; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --            ; --          ; --         ;
+; MIN_CORE_JUNCTION_TEMP              ; 0                                      ; --            ; --          ; --         ;
+; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --            ; processor   ; Top        ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family) ; --            ; processor   ; Top        ;
+; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family) ; --            ; processor   ; Top        ;
+; POWER_BOARD_THERMAL_MODEL           ; None (CONSERVATIVE)                    ; --            ; --          ; --         ;
+; POWER_PRESET_COOLING_SOLUTION       ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW  ; --            ; --          ; --         ;
+; PROJECT_OUTPUT_DIRECTORY            ; output_files                           ; --            ; --          ; --         ;
+; TOP_LEVEL_ENTITY                    ; processor                              ; NIOSII_test   ; --          ; --         ;
++-------------------------------------+----------------------------------------+---------------+-------------+------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------+
+; Flow Elapsed Time                                                                                                        ;
++----------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
++----------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Analysis & Synthesis ; 00:01:53     ; 1.0                     ; 799 MB              ; 00:03:00                           ;
+; Fitter               ; 00:00:15     ; 1.2                     ; 1270 MB             ; 00:00:18                           ;
+; Assembler            ; 00:00:02     ; 1.0                     ; 609 MB              ; 00:00:02                           ;
+; Timing Analyzer      ; 00:00:05     ; 1.3                     ; 708 MB              ; 00:00:07                           ;
+; Total                ; 00:02:15     ; --                      ; --                  ; 00:03:27                           ;
++----------------------+--------------+-------------------------+---------------------+------------------------------------+
+
+
++------------------------------------------------------------------------------------+
+; Flow OS Summary                                                                    ;
++----------------------+------------------+------------+------------+----------------+
+; Module Name          ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
++----------------------+------------------+------------+------------+----------------+
+; Analysis & Synthesis ; DL87HJLQ2        ; Windows 10 ; 10.0       ; x86_64         ;
+; Fitter               ; DL87HJLQ2        ; Windows 10 ; 10.0       ; x86_64         ;
+; Assembler            ; DL87HJLQ2        ; Windows 10 ; 10.0       ; x86_64         ;
+; Timing Analyzer      ; DL87HJLQ2        ; Windows 10 ; 10.0       ; x86_64         ;
++----------------------+------------------+------------+------------+----------------+
+
+
+------------
+; Flow Log ;
+------------
+quartus_map --read_settings_files=on --write_settings_files=off NIOSII_test -c NIOSII_test
+quartus_fit --read_settings_files=off --write_settings_files=off NIOSII_test -c NIOSII_test
+quartus_asm --read_settings_files=off --write_settings_files=off NIOSII_test -c NIOSII_test
+quartus_sta NIOSII_test -c NIOSII_test
+
+
+
